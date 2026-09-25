@@ -1,0 +1,153 @@
+name: swalath_majlis_user
+description: "Swalath Majlis Admin Panel"
+version: 1.2.2+12
+
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'  # 🔥 FIXED: Compatible with Flutter 3.44.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 🔥 Firebase - Updated to latest stable
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.5.1
+  cloud_firestore: ^5.6.5
+  firebase_storage: ^12.4.5
+
+  # 24x7 Quran live streaming - Updated
+  just_audio: ^0.9.44
+  audio_session: ^0.1.25
+
+  # 🔥 LIVE STREAMING - Updated compatible versions
+  webview_flutter: ^4.14.1
+  webview_flutter_android: ^4.13.0
+  webview_flutter_wkwebview: ^3.26.0
+  flutter_inappwebview: ^6.1.5
+
+  # YouTube Player
+  youtube_player_flutter: ^9.0.0
+
+  # Core packages - Updated
+  provider: ^6.1.2
+  url_launcher: ^6.3.1
+  uuid: ^4.5.2
+  share_plus: ^10.1.4
+  flutter_compass: ^0.8.0
+
+  # PDF & File handling - Updated
+  flutter_pdfview: ^1.4.4
+  http: ^1.3.0
+  path_provider: ^2.1.5
+  permission_handler: ^11.3.1
+  flutter_cache_manager: ^3.4.1
+  image_picker: ^1.1.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.20.2
+  audioplayers: ^6.8.1
+  geolocator: ^13.0.2
+  adhan: ^2.0.0
+  hijri: ^3.0.0
+  flutter_local_notifications: ^18.0.1
+  shared_preferences: ^2.5.3
+  timezone: ^0.9.4
+  cached_network_image: ^3.4.1
+  photo_view: ^0.15.0
+  google_fonts: ^6.2.1
+  crypto: ^3.0.3
+  universal_platform: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  hive_generator: ^2.0.1
+  build_runner: 2.4.13
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/splash.png
+    - assets/images/sak_logo.png
+    - assets/images/masjid.png
+    - assets/pdfs/quran.pdf
+    - assets/pdfs/Majlis.pdf
+    - assets/namaz/janaza.jpeg
+    - assets/namaz/janaza1.png
+    - assets/namaz/farl1.png
+    - assets/namaz/farl2.png
+    - assets/namaz/farl3.png
+    - assets/namaz/farl4.png
+    - assets/namaz/farl5.png
+    - assets/namaz/farl6.png
+    - assets/namaz/farl7.png
+    - assets/namaz/farl8.png
+    - assets/namaz/farl9.png
+    - assets/namaz/janaza_list.png
+    - assets/namaz/farl_list.png
+    - assets/images/dashboard.png
+
+    - assets/icon/menu/asmai.png
+    - assets/icon/menu/quran.png
+    - assets/icon/menu/ayath.png
+    - assets/icon/menu/calender.png
+    - assets/icon/menu/dua.png
+    - assets/icon/menu/counter.png
+    - assets/icon/menu/prayer.png
+    - assets/icon/menu/salah.png
+    # - assets/icon/menu/surah.png
+    - assets/icon/menu/thouba.png
+    - assets/icon/menu/ramazan.png
+    - assets/icon/menu/message.png
+    - assets/icon/menu/majlisunnur.png
+    - assets/icon/menu/azan.png
+    - assets/icon/menu/hajj.png
+    - assets/icon/menu/studies.png
+    - assets/icon/menu/moulood.png
+    # - assets/icon/menu/swalath.png
+    # - assets/icon/menu/surah.png
+    - assets/icon/menu/kubba.png
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+    
+    - family: Scheherazade
+      fonts:
+        - asset: assets/fonts/ScheherazadeNew-Regular.ttf
+        - asset: assets/fonts/ScheherazadeNew-Bold.ttf
+          weight: 700
+    
+    - family: Lateef
+      fonts:
+        - asset: assets/fonts/Lateef-Regular.ttf
+        - asset: assets/fonts/Lateef-Bold.ttf
+          weight: 700
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/sak_logo.png"
+  adaptive_icon_background: "#3D2A5B"
+  adaptive_icon_foreground: "assets/images/sak_logo.png"
+  remove_alpha_ios: true
+  min_sdk_android: 21

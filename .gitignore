@@ -1,0 +1,51 @@
+﻿# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+*.iml
+.idea/
+.vscode/
+
+# Build outputs
+android/app/build/
+android/.gradle/
+ios/Pods/
+ios/.symlinks/
+windows/flutter/ephemeral/
+macos/Flutter/ephemeral/
+linux/flutter/ephemeral/
+
+# Build artifacts
+*.apk
+*.aab
+*.ipa
+*.so
+*.sym
+*.zip
+*.jar
+
+# Large media
+*.mp4
+*.mov
+*.avi
+
+# Secrets
+.env
+*.key
+*.keystore
+google-services.json
+GoogleService-Info.plist
+key.properties
+upload-keystore.jks
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Sensitive configs
+lib/firebase_options.dart
+cors.json
+firebase.json
+flutter_*.log
